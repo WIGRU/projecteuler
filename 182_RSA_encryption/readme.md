@@ -1,6 +1,8 @@
 # Project Euler - 182
-Link: https://projecteuler.net/problem=182
 
+
+## Assignment
+Link: https://projecteuler.net/problem=182
 The RSA encryption is based on the following procedure:
 
 Generate two distinct primes p and q.
@@ -26,3 +28,7 @@ It's important that the number of unconcealed messages is at a minimum.
 
 Choose p=1009 and q=3643.
 Find the sum of all values of e, 1<e<φ(1009,3643) and gcd(e,φ)=1, so that the number of unconcealed messages for this value of e is at a minimum.
+
+## Solution
+- Brute force is to ineffective
+- Found this formula to calculate the number of unconseald messages: (1 + gcd(e-1, p-1)) * (1 + gcd(e-1, q-1))
